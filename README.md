@@ -2,6 +2,8 @@
 
 A very basic blockchain written in [JavaScript](https://codingislove.com/simple-blockchain-javascript/)
 
+An online blockchain [demo](https://anders.com/blockchain/).
+
 ## The concept
 
 A blockchain is a data structure like linked lists with a growing set of nodes or blocks. In a blockchain, each node is called a "block" and each block has an index, timestamp, hash of itself, hash of the previous block and some data.
@@ -18,4 +20,4 @@ Moreover, a crypocurrency implementation also has the flexibility of choosing wh
 
 ## Distributed verification
 
-A cryptocurrency blockchain implementation also has it's entire blockchain replicated over many different peers, (is it necessary for every peer to have the entire chain?). Whoever has the longest chain is determined to have the correct copy of the blockchain. This is because whoever has the longest chain also put in a lot of work to get there and thus must be duly rewarded. Note that in a network like Bitcoin, the computational complexity of mining a block steadly increases so that it takes 10 minutes to mine a block.
+A cryptocurrency blockchain implementation also has it's entire blockchain replicated over many different peers (Is it necessary for every peer to have the entire chain?). Whoever has the longest chain is determined to have the correct copy of the blockchain. This is because whoever has the longest chain also put in a lot of work to get there and thus must be duly rewarded. Note that in a network like Bitcoin, the computational complexity of mining a block steadly increases so that it takes 10 minutes to mine a block.
