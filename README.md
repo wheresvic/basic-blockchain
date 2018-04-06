@@ -10,4 +10,12 @@ The hash of each block gives it a unique identity like a fingerprint. A block's 
 
 To actually link the blocks together to make a blockchain that cannot be tampered with, each block stores the hash of the previous block. Thus, if the hash of a single block changes, the chain will be broken and given that the last known valid block is now de-linked from the origin, the entire chain will be invalidated.
 
-A cryptocurrency blockchain implementation has a lot more checks and balances in place, such as distributing the blocks via a p2p network and ensuring that the addition of each block requires the verification of the entire chain (which involves a time delay), etc.
+## Mining
+
+A cryptocurrency blockchain implementation has a concept of _mining_, whereby the hash of a block needs to fulfill certain criteria, e.g. the hash must start with 4 zeros. To enable searching for a hash that meets this criteria, an additional flexible parameter called a `nonce` is added. A simple implementation might use a number as a nonce so that mining is simply looping over all possible numbers to find a fitting hash.
+
+Moreover, a crypocurrency implementation also has the flexibility of choosing which transactions to group into a single block thereby enabling more options for mining.
+
+## Distributed verification
+
+A cryptocurrency blockchain implementation also has it's entire blockchain replicated over many different peers, (is it necessary for every peer to have the entire chain?). Whoever has the longest chain is determined to have the correct copy of the blockchain. This is because whoever has the longest chain also put in a lot of work to get there and thus must be duly rewarded. Note that in a network like Bitcoin, the computational complexity of mining a block steadly increases so that it takes 10 minutes to mine a block.
