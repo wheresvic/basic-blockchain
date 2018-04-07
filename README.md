@@ -14,10 +14,18 @@ To actually link the blocks together to make a blockchain that cannot be tampere
 
 ## Mining
 
-A cryptocurrency blockchain implementation has a concept of _mining_, whereby the hash of a block needs to fulfill certain criteria, e.g. the hash must start with 4 zeros. To enable searching for a hash that meets this criteria, an additional flexible parameter called a `nonce` is added. A simple implementation might use a number as a nonce so that mining is simply looping over all possible numbers to find a fitting hash.
+A cryptocurrency blockchain implementation has a concept of _mining_, whereby the hash of a block needs to fulfill certain criteria, e.g. the hash must start with 4 zeros or the hash must be a valid natural number under a certain value. To enable searching for a hash that meets this criteria, an additional flexible parameter called a `nonce` is added. A simple implementation might use a number as a nonce so that mining is simply looping over all possible numbers to find a fitting hash.
 
 Moreover, a crypocurrency implementation also has the flexibility of choosing which transactions to group into a single block thereby enabling more options for mining.
 
 ## Distributed verification
 
-A cryptocurrency blockchain implementation also has it's entire blockchain replicated over many different peers (Is it necessary for every peer to have the entire chain?). Whoever has the longest chain is determined to have the correct copy of the blockchain. This is because whoever has the longest chain also put in a lot of work to get there and thus must be duly rewarded. Note that in a network like Bitcoin, the computational complexity of mining a block steadly increases so that it takes 10 minutes to mine a block.
+A cryptocurrency blockchain implementation also has it's entire blockchain replicated over many different peers. Not all peers have the full chain, as it is enough to keep only a recent portion of the chain for verification purposes. Most importantly, whoever has the longest chain is determined to have the correct copy of the blockchain!
+
+Note that in a network like Bitcoin, the computational complexity of mining a block steadly increases so that it takes 10 minutes to mine a block. This computational complexity is known as difficulty and it could be as simple as increasing the amount of leading zeros that a hash needs to require to fulfill the mining criteria.
+
+## Rewards
+
+In a cryptocurrency implementation, each block in a blockchain essentially stores a list of transactions. However, in order for someone to spend money, they need to initially get it. In the bitcoin world, this is known as a `coinbase` transaction.
+
+Moreover, in order to make it lucrative for miners to spend the effort in mining blocks, each successfully mined block results in some reward for the miner.
