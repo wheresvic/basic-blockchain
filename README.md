@@ -29,3 +29,4 @@ Note that in a network like Bitcoin, the computational complexity of mining a bl
 In a cryptocurrency implementation, each block in a blockchain essentially stores a list of transactions. However, in order for someone to spend money, they need to initially get it. In the bitcoin world, this is known as a `coinbase` transaction.
 
 Moreover, in order to make it lucrative for miners to spend the effort in mining blocks, each successfully mined block results in some reward for the miner.
+
