@@ -30,3 +30,4 @@ In a cryptocurrency implementation, each block in a blockchain essentially store
 
 Moreover, in order to make it lucrative for miners to spend the effort in mining blocks, each successfully mined block results in some reward for the miner.
 
+
