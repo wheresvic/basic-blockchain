@@ -4,7 +4,8 @@
   "description": "A basic blockchain implementation",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha **/*.spec.js"
+    "test": "mocha **/*.spec.js",
+    "release-it": "release-it"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,8 @@
   },
   "homepage": "https://github.com/victorparmar/basic-blockchain#readme",
   "devDependencies": {
-    "chai": "4.1.2",
-    "mocha": "5.0.5",
-    "release-it": "12.3.0"
+    "chai": "4.2.0",
+    "mocha": "6.2.0",
+    "release-it": "12.3.6"
   }
 }
