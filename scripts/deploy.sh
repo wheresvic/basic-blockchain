@@ -1,6 +1,8 @@
 #!/bin/bash
 
-ROOT_FOLDER="../"
+# Run script from root folder
+
+ROOT_FOLDER="./"
 
 usage () {
     cat <<EOM
